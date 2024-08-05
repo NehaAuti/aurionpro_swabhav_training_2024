@@ -1,0 +1,10 @@
+package com.aurionpro.behavioural.state.model;
+
+public class PacketTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

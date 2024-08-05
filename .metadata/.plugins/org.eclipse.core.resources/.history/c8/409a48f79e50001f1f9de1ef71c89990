@@ -1,0 +1,22 @@
+package com.aurionpro.behavioural.stratergy.test;
+
+import com.aurionpro.behavioural.stratergy.model.AddOperation;
+import com.aurionpro.behavioural.stratergy.model.MultiplyOperation;
+
+public class OperationStratergy {
+
+	public static void main(String[] args) {
+
+		        // Using AddOperation strategy
+		        OperationStratergy operationStrategy = new OperationStrategy(new AddOperation());
+		        System.out.println("Addition of 5 and 3: " + operationStrategy.doOperation(5, 3));
+		        
+		        // Changing strategy to MultiplyOperation
+		        operationStrategy.setOperation(new MultiplyOperation());
+		        System.out.println("Multiplication of 5 and 3: " + operationStrategy.doOperation(5, 3));
+		    }
+		}
+
+		    }
+
+}

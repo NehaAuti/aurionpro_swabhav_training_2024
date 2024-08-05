@@ -1,0 +1,13 @@
+package com.aurionpro.model;
+
+public class Reference {
+	public Reference()//constructor
+	{
+		
+	}
+	void print()
+
+	{
+		System.out.println("Inside Refernce");
+	}
+}

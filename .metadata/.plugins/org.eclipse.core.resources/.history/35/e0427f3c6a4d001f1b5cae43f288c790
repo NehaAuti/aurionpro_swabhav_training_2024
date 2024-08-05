@@ -1,0 +1,40 @@
+package com.aurionpro.stream.test;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamStringAssignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 String[] names = {"Jayesh", "Nimesh", "Mark", "Mahesh", "Ramesh"};
+		
+		 // 1. First 3 students sorted in ascending order
+		 
+		 List<String> firstThreeSorted = Arrays.stream(names)
+	                                           .limit(3)
+	                                           .sorted()
+	                                           .collect(Collectors.toList());
+	        System.out.println("First 3 students sorted in ascending order: " + firstThreeSorted);
+	        
+	     // 2. First 3 students sorted in ascending order if it contains 'a'
+	        List<String> firstThreeWithA = Arrays.stream(names)
+	                                              .filter(name -> name.toLowerCase().contains("a"))
+	                                              .limit(3)
+	                                              .sorted()
+	                                              .collect(Collectors.toList());
+	        System.out.println("First 3 students sorted in ascending order if it contains 'a': " + firstThreeWithA);
+	        
+
+	        // 3. Students in descending order
+	        List<String> studentsDescending = Arrays.stream(names)
+	                                          .sorted(Comparator.reverseOrder())
+	                                          .collect(Collectors.toList());
+	        System.out.println("Students in Descending Order: " +studentsDescending);
+	        
+
+	}
+
+}

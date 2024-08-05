@@ -1,0 +1,33 @@
+package com.aurionpro.model;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+
+public class AreaCalculatorTest {
+     
+	AreaCalculator calculator;
+	@BeforeEach
+	void init()
+	{
+		calculator = new AreaCalculator();
+	}
+	@Test
+	void testCalculatorAreaofCircle()
+	{
+		//fail("unimplemented");
+	    assertEquals(78.5,calculator.calculateAreaOfCircle(5));
+	}
+	
+	@Test
+	void testCalculatorAreaofRectangle()
+	{
+		fail("unimplemented");
+	}
+	
+	@Test
+	void testCalculatorAreaofTriangle()
+	{
+		fail("unimplemented");
+	}
+}

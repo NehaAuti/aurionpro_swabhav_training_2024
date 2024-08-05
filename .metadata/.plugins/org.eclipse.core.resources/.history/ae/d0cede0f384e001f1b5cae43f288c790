@@ -1,0 +1,36 @@
+package com.aurionpro.srp.ocp.violoation.test;
+
+import com.aurionpro.srp.ocp.violation.model.DiwaliInterest;
+import com.aurionpro.srp.ocp.violation.model.FixedDeposit1;
+import com.aurionpro.srp.ocp.violation.model.HoliInterest;
+import com.aurionpro.srp.ocp.violation.model.NewYearInterest;
+import com.aurionpro.srp.ocp.violation.model.OthersInterest;
+
+public class FixedDeposit1Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		    FixedDeposit1 fd1 = new FixedDeposit1(101, "Neha", 10000, 2, new NewYearInterest());
+	        FixedDeposit1 fd2 = new FixedDeposit1(102, "sayali", 15000, 1, new DiwaliInterest());
+	        FixedDeposit1 fd3 = new FixedDeposit1(103, "Priya Singh", 20000, 3, new HoliInterest());
+	        FixedDeposit1 fd4 = new FixedDeposit1(104, "Raj Patel", 25000, 5, new OthersInterest());
+
+	        // Print details and calculate interest for each FixedDeposit
+	        printFixedDepositDetails(fd1);
+	        printFixedDepositDetails(fd2);
+	        printFixedDepositDetails(fd3);
+	        printFixedDepositDetails(fd4);
+	    }
+
+	    private static void printFixedDepositDetails(FixedDeposit1 fd) {
+	        System.out.println("Account Number: " + fd.getAccountNumber());
+	        System.out.println("Name: " + fd.getName());
+	        System.out.println("Principle: " + fd.getPrinciple());
+	        System.out.println("Duration: " + fd.getDuration() + " years");
+	        System.out.println("Interest Rate: " + fd.getInterestRates() + "%");
+	        System.out.println("Simple Interest: " + fd.calculateSimpleInterest());
+	        System.out.println(); 
+	    }
+	}
+
+

@@ -1,0 +1,33 @@
+package com.aurionpro.test;
+
+import java.util.function.Consumer;
+
+public class ConsumerTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Consumer<Integer> consumer = (Integer number) ->System.out.println("Square of Number :"+number*number);
+	    consumer.accept(5);
+	    
+	    Consumer<Integer> factorial = (Integer number) ->{
+	    	Integer result = 1;
+	    	for(int i=2; i<number ;i++) {
+	    		result *= i; }
+	    	
+	    System.out.println("Factorial is :"+result);
+	    };
+	factorial.accept(5);
+	
+	BiConsumer<Integer , Integer> addition =(Integer number1,Integer number2) ->{
+		System.out.println("Addition of two numbers:"+(number1+number2));
+		
+	};
+	
+	addition.accept(10,20);
+
+	
+	
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package com.aurionpro.structural.decorator.test;
+
+public class HatDecoratorTest {
+
+	public static void main(String[] args) {
+		IHat standardHat = new StandardHat();
+        IHat premiumHat = new PremiumHat();
+
+        IHat goldenStandardHat = new GoldenHat(standardHat);
+        IHat ribbonedPremiumHat = new RibbonedHat(premiumHat);
+
+        System.out.println(goldenStandardHat.getName() + ": $" + goldenStandardHat.getPrice() + " - " + goldenStandardHat.getDescription());
+        System.out.println(ribbonedPremiumHat.getName() + ": $" + ribbonedPremiumHat.getPrice() + " - " + ribbonedPremiumHat.getDescription());
+    }
+}

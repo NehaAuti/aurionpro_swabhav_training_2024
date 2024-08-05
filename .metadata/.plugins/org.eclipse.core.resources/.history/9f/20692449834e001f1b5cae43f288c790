@@ -1,0 +1,102 @@
+package com.aurionpro.stream.test;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.Scanner;
+
+import com.aurionpro.stream.model.Country;
+import com.aurionpro.stream.model.Region;
+
+public class CountryRegionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 // Create a list of Region objects
+        List<Region> regions = Arrays.asList(
+            new Region(1, "Europe"),
+            new Region(2, "Americas"),
+            new Region(3, "Asia"),
+            new Region(4, "Middle East and Africa")
+        );
+
+        // Create a list to store Country objects with region IDs
+        List<Country> countries = new ArrayList<>();
+        
+        // Add Country objects to the list with region IDs
+        countries.add(new Country("IT", "Italy", 1));
+        countries.add(new Country("JP", "Japan", 3));
+        countries.add(new Country("US", "United States of America", 2));
+        countries.add(new Country("CA", "Canada", 2));
+        countries.add(new Country("CN", "China", 3));
+        countries.add(new Country("IN", "India", 3));
+        countries.add(new Country("AU", "Australia", 3));
+        countries.add(new Country("ZW", "Zimbabwe", 4));
+        countries.add(new Country("SG", "Singapore", 3));
+        countries.add(new Country("UK", "United Kingdom", 1));
+        countries.add(new Country("FR", "France", 1));
+        countries.add(new Country("DE", "Germany", 1));
+        countries.add(new Country("ZM", "Zambia", 4));
+        countries.add(new Country("EG", "Egypt", 4));
+        countries.add(new Country("BR", "Brazil", 2));
+        countries.add(new Country("CH", "Switzerland", 1));
+        countries.add(new Country("NL", "Netherlands", 1));
+        countries.add(new Country("MX", "Mexico", 2));
+        countries.add(new Country("KW", "Kuwait", 4));
+        countries.add(new Country("IL", "Israel", 4));
+        countries.add(new Country("DK", "Denmark", 1));
+        countries.add(new Country("HK", "HongKong", 3));
+        countries.add(new Country("NG", "Nigeria", 4));
+        countries.add(new Country("AR", "Argentina", 2));
+        countries.add(new Country("BE", "Belgium", 1));
+
+        // Create a map of region IDs to Region objects
+        Map<Integer, Region> regionIdMap = regions.stream()
+                                                  .collect(Collectors.toMap(Region::getId, Function.identity()));
+
+        // Create Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Get country name by code
+        System.out.print("Enter country code to get the name: ");
+        String code = scanner.nextLine();
+        String countryName = getCountryNameByCode(countries, code);
+        System.out.println("Country name: " + countryName);
+
+        // Get countries by region ID
+        System.out.print("Enter region ID to get countries: ");
+        int regionId = scanner.nextInt();
+        List<Country> countriesInRegion = getCountriesByRegionId(countries, regionId);
+        System.out.println("Countries in region ID " + regionId + ":");
+        for (Country country : countriesInRegion) {
+            System.out.println(country);
+        }
+
+        // Close the scanner
+        scanner.close();
+    }
+
+    // Method to get country name by code
+    public static String getCountryNameByCode(List<Country> countries, String code) {
+        for (Country country : countries) {
+            if (country.getCode().equals(code)) {
+                return country.getName();
+            }
+        }
+        return "Country code not found";
+    }
+
+    // Method to get all countries in a region by region ID
+    public static List<Country> getCountriesByRegionId(List<Country> countries, int regionId) {
+        List<Country> result = new ArrayList<>();
+        for (Country country : countries) {
+            if (country.getRegionId() == regionId) {
+                result.add(country);
+            }
+        }
+        return result;
+    }
+}

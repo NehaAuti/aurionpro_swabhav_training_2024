@@ -1,0 +1,33 @@
+package com.aurionpro.srp.violation.test;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.aurionpro.srp.violation.model.Invoice;
+import com.aurionpro.srp.violation.model.Taxcalculator;
+import com.aurionpro.srp.violation.model.InvoicePrinter;
+
+public class InvoiceTest {
+
+    public static void main(String[] args) {
+        // Create a list of invoices
+        List<Invoice> invoices = Arrays.asList(
+            new Invoice("1", "Laptop", 1000.00),
+            new Invoice("2", "Smartphone", 600.00),
+            new Invoice("3", "Headphones", 150.00)
+        );
+
+
+        Taxcalculator taxCalculator = new Taxcalculator();
+        double taxRate = 10; // 10% tax rate
+
+        // Print each invoice
+        for (Invoice invoice : invoices) {
+            // Create an InvoicePrinter instance for each invoice
+            InvoicePrinter invoicePrinter = new InvoicePrinter(invoice, taxCalculator, taxRate);
+            // Display the invoice
+            invoicePrinter.displayInvoice();
+            System.out.println(); // Print a blank line for separation
+        }
+    }
+}

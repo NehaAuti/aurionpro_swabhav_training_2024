@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="OperationsTest" project="31_unittesting_app" tests="4" started="4" failures="1" errors="0" ignored="0">
+  <testsuite name="com.aurionpro.model.OperationsTest" time="0.042" displayname="OperationsTest" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]">
+    <testcase name="testMultiplication" classname="com.aurionpro.model.OperationsTest" time="0.019" displayname="testMultiplication()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testMultiplication()]"/>
+    <testcase name="testAddition" classname="com.aurionpro.model.OperationsTest" time="0.001" displayname="testAddition()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testAddition()]"/>
+    <testcase name="testDivision" classname="com.aurionpro.model.OperationsTest" time="0.015" displayname="testDivision()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testDivision()]">
+      <failure>
+        <expected>5</expected>
+        <actual>2</actual>org.opentest4j.AssertionFailedError: This function must do Division ==&gt; expected: &lt;5&gt; but was: &lt;2&gt;&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)&#13;
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)&#13;
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)&#13;
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)&#13;
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)&#13;
+	at com.aurionpro.model.OperationsTest.testDivision(OperationsTest.java:38)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at java.util.ArrayList.forEach(Unknown Source)&#13;
+	at java.util.ArrayList.forEach(Unknown Source)&#13;
+&#13;
+</failure>
+    </testcase>
+    <testcase name="testSubtraction" classname="com.aurionpro.model.OperationsTest" time="0.005" displayname="testSubtraction()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testSubtraction()]"/>
+  </testsuite>
+</testrun>

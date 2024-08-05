@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class AreaCalculatorTest {
+
+	void testCalculatorAreaofCircle()
+	{
+		fail("unimplemented");
+	}
+}

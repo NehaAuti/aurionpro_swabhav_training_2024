@@ -1,0 +1,14 @@
+package com.aurionpro.creational.abstractfactory.model;
+
+ublic class AccountFactory {
+    public static IAccountFactory getFactory(String accountType, double overdraftLimit) {
+        switch (accountType.toLowerCase()) {
+            case "saving":
+                return new SavingAccountFactory();
+            case "current":
+                return new CurrentAccountFactory(overdraftLimit);
+            default:
+                return null;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+package com.aurionpro.stream.test;
+
+public class Account {
+
+	    private int accNo;
+	    private String name;
+	    private double balance;
+}

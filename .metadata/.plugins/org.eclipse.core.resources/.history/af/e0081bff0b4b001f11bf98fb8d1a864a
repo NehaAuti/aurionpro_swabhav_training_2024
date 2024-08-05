@@ -1,0 +1,6 @@
+package com.aurionpro.model;
+
+public interface IFactorial {
+
+	int factor(int number1);
+}

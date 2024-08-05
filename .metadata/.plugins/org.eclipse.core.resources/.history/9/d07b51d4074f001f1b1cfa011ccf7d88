@@ -1,0 +1,9 @@
+package com.aurionpro.creational.abstractfactory.model;
+
+public class ICar {
+void start();
+	
+	void stop();
+}
+
+}

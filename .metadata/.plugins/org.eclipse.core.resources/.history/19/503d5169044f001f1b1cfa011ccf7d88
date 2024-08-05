@@ -1,0 +1,23 @@
+package com.aurionpro.creational.factory.test;
+
+import com.aurionpro.creational.factory.model.CurrentAccount;
+import com.aurionpro.creational.factory.model.SavingAccount;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SavingAccount savingAccount = new SavingAccount(1000);
+        System.out.println("Testing SavingAccount:");
+        savingAccount.credit(500);  
+        savingAccount.debit(300)
+        System.out.println("Final balance in SavingAccount: " + savingAccount.getBalance());
+
+        
+        CurrentAccount currentAccount = new CurrentAccount(1000);
+        System.out.println("\nTesting CurrentAccount:");
+        currentAccount.credit(200);  
+        currentAccount.debit(100);   
+        System.out.println("Final balance in CurrentAccount: " + currentAccount.getBalance());
+    }
+}

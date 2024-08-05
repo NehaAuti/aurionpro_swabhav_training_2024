@@ -1,0 +1,27 @@
+package com.aurionpro.creational.singleton.model;
+
+public class DatabaseCreation {
+	
+private static DatabaseCreation  database; //reference of login
+	
+	private Database() 
+	{
+		System.out.println("Database is successfully Created");   
+	}
+	
+	public static Databse getDatabse()
+	{
+		if(database == null)
+	 database = new Login();
+		return database;
+	}
+	
+	public void status() 
+	{
+		System.out.println("Databse is successfully Connected");   
+	}
+
+}
+
+
+}

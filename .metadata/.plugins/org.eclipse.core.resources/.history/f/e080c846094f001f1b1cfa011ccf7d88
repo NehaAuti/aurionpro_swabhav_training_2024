@@ -1,0 +1,13 @@
+package com.aurionpro.creational.abstractfactory.model;
+
+public class MarutiFactory implements IFactory{
+
+	@Override
+	public ICar makeCar(carType Maruti) {
+		// TODO Auto-generated method stub
+		
+		return new Maruti();
+		
+	}
+
+}

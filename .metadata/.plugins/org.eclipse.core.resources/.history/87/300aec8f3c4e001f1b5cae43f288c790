@@ -1,0 +1,7 @@
+package com.aurionpro.lsp.violation.model;
+
+
+	public interface IWorker1 extends IWorkable, ILunchInterval {
+	    // You can also add additional methods here if needed
+	}
+

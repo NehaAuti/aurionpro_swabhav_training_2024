@@ -1,0 +1,13 @@
+package com.aurionpro.behavioural.stratergy.model;
+
+public class AddOperation implements IOperation {
+
+	@Override
+	public int doOperation(int a, int b) {
+		// TODO Auto-generated method stub
+		System.out.println("Addition is:"+ a+b);
+		return a+b;
+		
+	}
+
+}

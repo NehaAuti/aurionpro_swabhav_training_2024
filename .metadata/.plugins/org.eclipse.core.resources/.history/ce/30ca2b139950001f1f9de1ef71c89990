@@ -1,0 +1,24 @@
+package com.aurionpro.behavioural.state.model;
+
+public class PacketTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Packet packet = new Packet();
+        
+        packet.printCurrentStatus();
+        
+        packet.goToNextState();
+        packet.printCurrentStatus();
+        
+        packet.goToNextState();
+        packet.printCurrentStatus();
+        
+        packet.goToPreviousState();
+        packet.printCurrentStatus();
+        
+        packet.goToPreviousState();
+        packet.printCurrentStatus();
+    }
+}
+

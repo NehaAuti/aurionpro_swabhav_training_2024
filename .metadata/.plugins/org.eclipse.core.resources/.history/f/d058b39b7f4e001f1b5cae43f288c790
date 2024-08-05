@@ -1,0 +1,5 @@
+package com.aurionpro.stream.model;
+
+public class Country {
+
+}

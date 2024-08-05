@@ -1,0 +1,10 @@
+package com.aurionpro.lsp.violation.test;
+
+public class IWorkerTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

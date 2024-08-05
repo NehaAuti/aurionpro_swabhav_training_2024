@@ -1,0 +1,10 @@
+package com.aurionpro.srp.violation.model;
+
+public class InvoicePrinter {
+	 public void displayInvoice() {
+		  
+         System.out.println();
+		
+	}
+
+}

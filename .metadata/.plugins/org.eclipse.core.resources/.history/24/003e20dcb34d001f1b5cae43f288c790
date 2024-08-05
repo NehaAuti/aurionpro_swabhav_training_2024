@@ -1,0 +1,21 @@
+package com.aurionpro.srp.violation.model;
+
+public class Taxcalculator {
+	private Invoice invoice;
+	
+	
+	public Taxcalculator(Invoice invoice) {
+		super();
+		this.invoice = invoice;
+	}
+
+
+	public double calculateTax() 
+	{
+//      final double TAX_RATE = 0.10; // 10% tax rate
+//      return amount * TAX_RATE;
+		
+		return invoice.getAmount() * invoice.getTax()/100;
+  }
+
+}

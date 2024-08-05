@@ -1,0 +1,19 @@
+package com.aurionpro.srp.violation.model;
+
+public class InvoicePrinter {
+	private Invoice invoice;
+	private TaxCalcularor taxCalculator;
+	
+	
+	public void displayInvoice() {
+		  
+         System.out.println(id);
+         System.out.println(description);
+         System.out.println(amount));
+         System.out.println(tax);
+         System.out.println(totalamount);
+         
+		
+	}
+
+}

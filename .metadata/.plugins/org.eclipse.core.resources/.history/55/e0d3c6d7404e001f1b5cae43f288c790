@@ -1,0 +1,12 @@
+package com.aurionpro.dip.violation.model;
+
+public class FileLogger implements ILogger{
+
+	public void log(String err) {
+		  System.out.println("logged into file logger" +err);
+		  
+		 }
+
+	
+
+}

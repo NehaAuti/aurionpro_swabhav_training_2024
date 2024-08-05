@@ -1,0 +1,21 @@
+package com.aurionpro.stream.test;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.aurionpro.model.Account;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 List<Account> accounts = Arrays.asList(
+		            new Account(101, "Neha", 1500.0),
+		            new Account(102, "Sayali", 2500.0),
+		            new Account(103, "Sakshi", 3500.0),
+		            new Account(104, "Namrata", 4500.0),
+		            new Account(105, "Aagya", 5500.0));
+
+	}
+
+}

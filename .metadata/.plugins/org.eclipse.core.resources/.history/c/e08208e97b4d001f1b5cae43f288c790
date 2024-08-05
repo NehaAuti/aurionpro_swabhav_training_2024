@@ -1,0 +1,13 @@
+package com.aurionpro.srp.violation.model;
+
+public class Taxcalculator {
+	
+	public double calculateTax(double amount,double tax) 
+	{
+//      final double TAX_RATE = 0.10; // 10% tax rate
+//      return amount * TAX_RATE;
+		
+		return amount * tax/100;
+  }
+
+}

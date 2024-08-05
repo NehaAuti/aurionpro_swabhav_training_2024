@@ -1,0 +1,26 @@
+package com.aurionpro.creational.adapter.test;
+
+public class ShoppingCartTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ShoppingCart cart = new ShoppingCart();
+
+        IItems biscuit = new Biscuit("Parle-G", 10.0);
+        IItems chocolate = new Chocolate("Dairy Milk", 20.0);
+        Hat hat = new Hat("Beanie", "Warm Beanie Hat", 100.0, 15.0);
+        IItems hatAdapter = new HatAdapter(hat);
+
+        cart.addItemToCart(biscuit);
+        cart.addItemToCart(chocolate);
+        cart.addItemToCart(hatAdapter);
+
+        System.out.println("Cart Items:");
+        for (IItems item : cart.getCartItems()) {
+            System.out.println(item.getItemName() + ": $" + item.getItemPrice());
+        }
+
+        System.out.println("Total Cart Price: $" + cart.getCartPrice());
+    }
+}
+

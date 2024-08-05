@@ -1,0 +1,16 @@
+package com.aurionpro.model;
+
+import org.junit.jupiter.api.Test;
+
+public class Student {
+	
+	private IStudentService studentService;
+	public double calculatePercentage()
+
+	{
+		return (studentService.getMarks()/studentService.getNumberOfSubjects())*100;
+		
+	}
+	
+	
+}

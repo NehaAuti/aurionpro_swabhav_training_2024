@@ -1,0 +1,10 @@
+package com.aurionpro.stream.test;
+
+public class StreamStringAssignment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

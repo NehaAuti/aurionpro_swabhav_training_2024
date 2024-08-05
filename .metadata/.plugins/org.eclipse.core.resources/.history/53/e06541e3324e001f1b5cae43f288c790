@@ -1,0 +1,11 @@
+package com.aurionpro.srp.violation.test;
+
+public class FixedDepositTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

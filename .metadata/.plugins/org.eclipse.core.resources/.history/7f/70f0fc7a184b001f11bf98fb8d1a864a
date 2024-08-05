@@ -1,0 +1,15 @@
+package com.aurionpro.test;
+
+public class ReferenceTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+	private static void method()
+	{
+	    	
+	}
+
+}
