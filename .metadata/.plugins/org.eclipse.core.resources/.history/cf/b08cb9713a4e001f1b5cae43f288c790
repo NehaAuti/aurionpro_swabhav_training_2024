@@ -1,7 +1,0 @@
-package com.aurionpro.lsp.violation.model;
-
-public class IWorker {
-	public void startWork();
-	
-
-}

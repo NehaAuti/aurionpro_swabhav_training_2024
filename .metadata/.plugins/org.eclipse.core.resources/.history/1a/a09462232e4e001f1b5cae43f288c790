@@ -1,7 +1,0 @@
-package com.aurionpro.srp.violation.model;
-
-public class Rectangle {
-	private int width;
-	private int height;
-
-}

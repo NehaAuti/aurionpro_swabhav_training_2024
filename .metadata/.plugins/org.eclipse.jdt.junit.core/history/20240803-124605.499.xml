@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="OperationsTest" project="31_unittesting_app" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="com.aurionpro.model.OperationsTest" time="0.029" displayname="OperationsTest" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]">
-    <testcase name="testMultiplication" classname="com.aurionpro.model.OperationsTest" time="0.018" displayname="testMultiplication()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testMultiplication()]"/>
-    <testcase name="testAddition" classname="com.aurionpro.model.OperationsTest" time="0.002" displayname="testAddition()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testAddition()]"/>
-    <testcase name="testDivision" classname="com.aurionpro.model.OperationsTest" time="0.002" displayname="testDivision()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testDivision()]"/>
-    <testcase name="testSubtraction" classname="com.aurionpro.model.OperationsTest" time="0.006" displayname="testSubtraction()" uniqueid="[engine:junit-jupiter]/[class:com.aurionpro.model.OperationsTest]/[method:testSubtraction()]"/>
-  </testsuite>
-</testrun>

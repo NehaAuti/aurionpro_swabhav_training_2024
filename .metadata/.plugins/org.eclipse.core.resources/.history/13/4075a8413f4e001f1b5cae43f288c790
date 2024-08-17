@@ -1,6 +1,0 @@
-package com.aurionpro.dip.violation.model;
-
-public class DBLogger {
-  int tax = 0;
-  tax
-}

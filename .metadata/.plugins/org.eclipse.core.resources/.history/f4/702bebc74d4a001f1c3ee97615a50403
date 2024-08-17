@@ -1,8 +1,0 @@
-package com.aurionpro.threading.model;
-
-public class NewTask implements Callable {
-      public Integer call()
-      {
-    	  
-      }
-}
